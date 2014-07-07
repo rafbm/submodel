@@ -11,6 +11,8 @@ module Submodel
 
     module ClassMethods
       def submodel(attr, klass, validation_options = {}, &block)
+        return unless self.table_exists?
+
         column = columns_hash[attr.to_s]
 
         augmented_klass = Class.new(klass) do
