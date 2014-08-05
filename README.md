@@ -12,7 +12,7 @@ gem 'submodel'
 Create a submodel with `ActiveModel::Model`. Here’s an example `Address` model using [Carmen](http://github.com/jim/carmen) to provide country and state validations.
 
 ```ruby
-# app/submodels/mailing_address.rb
+# app/submodels/address.rb
 
 class Address
   include ActiveModel::Model
